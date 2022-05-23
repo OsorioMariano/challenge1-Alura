@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/candado.ico" type="image/x-icon">
+        <title>Encriptar online</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1 class="logo"><img class="img-h1" src="img/logo.png" alt="Logo Alura"></h1>
+        </header>
+
+        <main class="principal">
+
+            <section class="section-izquierda">
+
+                <div class="superior"> 
+                    <textarea  class="ingreso" placeholder="Ingrese el texto aquí" required></textarea>
+
+                    <h6 class="mensaje-restriccion">&#128712 Solo se permiten palabras en minúsculas y sin acentuar.</h6>  
+                </div>
+                <div class="inferior">
+                         
+                    <button class="encriptar">Encriptar</button>
+                    <button class="desencriptar">Desencriptar</button>
+                </div>
+
+            </section>        
+            <section class="section-derecha">
+
+                <div class="superior">
+                    <textarea readonly class="devolucion"></textarea>
+
+                    <div class="fondo">
+                    
+                        <img class="fondo-img" src="img/muñeco.png" alt="fondo de muñeco">
+
+                        <p class="mensaje-principal">Ningún mensaje fue encontrado</p>
+
+                        <p class="mensaje-secundario">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    
+                    </div>
+
+                </div>               
+                <div class="inferior">
+                    <button class="copia invisible">Copiar</button>
+                    <p id="mensaje-copia" class="invisible">Mensaje copiado en el portapapeles</p>
+                </div>              
+
+            </section> 
+            
+        </main>       
+
+        <footer>
+            <p class="alumno">Osorio Mariano</p>
+        </footer> 
+        
+        <script src="js/principal.js"></script>
+    </body>
+</html>
+
